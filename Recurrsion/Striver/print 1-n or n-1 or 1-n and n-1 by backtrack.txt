@@ -1,0 +1,27 @@
+question:1-n by backtrack
+approach:phle call then return me print krwao
+or can say expection is that fun will give 1 2 3 4 5 so if we assume faith as fun(4) already know to print 1 2 3 4 then we just need to print 5 at the last 
+    public static void fun(int n)
+    {
+        if(n<1)
+        {
+            
+            return;
+        }
+        fun(n-1);
+        System.out.println(n);
+        
+    }
+question:n-1 by backtrack
+ public static void fun(int n)
+    {
+        if(n<1)
+        {
+            
+            return;
+        }
+	  System.out.println(n);
+        fun(n-1);
+        
+        
+    }

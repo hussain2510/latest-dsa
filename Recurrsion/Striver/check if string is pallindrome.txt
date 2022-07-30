@@ -1,0 +1,16 @@
+arpproach:check only the half length if i crosses half length that means we already checked and we will return as true 
+if any char with last char is not equal return false then if both the above if not satisfied we will go to check the remianing string
+
+
+ public static boolean fun(String s,int i)
+    {
+        if(i>=s.length()/2)return true;
+        if(s.charAt(i)!=s.charAt(s.length()-i-1))
+        {
+            return false;
+        }
+        
+        return fun(s,i+1);
+        
+        
+    }

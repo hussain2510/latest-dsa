@@ -1,0 +1,27 @@
+question:sum of 1-n with sum as parameter
+ public static void fun(int n,int sum)
+    {
+        if(n<1)
+        {
+            System.out.println(sum);
+            return;
+        }
+        sum=sum+n;
+        fun(n-1,sum);
+        
+        
+    }
+
+
+question:without paramter
+ public static int fun(int n)
+    {
+        if(n==1)
+        {
+            
+            return 1;
+        }
+        return n+fun(n-1);
+        
+        
+    }

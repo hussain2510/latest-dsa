@@ -1,0 +1,16 @@
+approach 1-using two point take l and r 
+swap(l,r,arr)
+{
+	if(l>=r)return;
+	swap(arr[l],arr[r]);
+	swap(l+1,r-1,arr);
+}
+main(){swap(0,5,{1,2,3,4,5,6})}
+
+approach 2-using single pointer
+swap(i,arr)
+{
+	if(i>=n/2)return;
+	swap(arr[i],arr[length-i-1]);
+	swap(i+1,arr);
+}
